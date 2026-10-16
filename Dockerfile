@@ -6,7 +6,8 @@ LABEL maintainer="Rushi"
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 # Deploy SecureBank WAR as the ROOT application
-COPY target/securebank.war /usr/local/tomcat/webapps/ROOT.war
+#COPY target/securebank.war /usr/local/tomcat/webapps/ROOT.war
+COPY target/securebank.war /usr/local/tomcat/webapps/securebank.war
 
 # SecureBank runs on Tomcat 8080
 EXPOSE 8080
